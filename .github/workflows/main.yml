@@ -27,6 +27,10 @@ jobs:
         run: mvn clean install
         working-directory: qa-automations-scripts-main/BlockDAG-Automation
 
+      - name: Start Application
+        run: mvn clean start  # Assuming 'start' is a valid goal/command in your setup
+        working-directory: qa-automations-scripts-main/BlockDAG-Automation
+
       - name: Run Tests
         run: mvn test
         working-directory: qa-automations-scripts-main/BlockDAG-Automation
