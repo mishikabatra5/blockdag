@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" name="C:/Users/user/IdeaProjects/BlockDAG-Automation">
+        <classes>
+            <class name="Test.EvmTesting">
+                <methods>
+                    <include name="Dashboardtesting"/>
+                    <include name="Blocktesting"/>
+                    <include name="Transactiontesting"/>
+                    <include name="SearchTesting"/>
+                    <include name="ContractListingTesting"/>
+                    <include name="TopTransferTesting"/>
+                    <include name="TokenTransferTesting"/>
+                    <include name="NodeTesting"/>
+                </methods>
+            </class>
+            <class name="Test.UtxoTesting">
+                <methods>
+                    <include name="UtxoSwitching"/>
+                    <include name="UtxoDashboardTesting"/>
+                    <include name="UtxoBlockTesting"/>
+                    <include name="UtxoTransactiontesting"/>
+                    <include name="UtxoNodeTesting"/>
+                    <include name="UtxoSearchBarTesting"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

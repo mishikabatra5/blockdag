@@ -1,0 +1,13 @@
+PageObjects\UtxoBlockLocators.class
+PageObjects\UtxoTransactionLocators.class
+PageObjects\EvmFaucetLocators.class
+Test\EvmTesting.class
+PageObjects\EvmTransactionLocators.class
+PageObjects\UtxoFaucetLocators.class
+PageObjects\EvmBlockLocators.class
+Helper\BaseClass.class
+PageObjects\EvmSearchbar.class
+PageObjects\UtxoSearchBar.class
+PageObjects\EvmDashboardLocators.class
+Test\UtxoTesting.class
+PageObjects\UtxoDashboardLocators.class
