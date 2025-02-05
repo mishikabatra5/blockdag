@@ -25,7 +25,7 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean install
-        working-directory: qa-automations-scripts-main/BlockDAG-Automation
+        working-directory: qa-automations-scripts-main/src/test/resources
 
       - name: Start Application
         run: mvn clean start  # Assuming 'start' is a valid goal/command in your setup
@@ -33,10 +33,10 @@ jobs:
 
       - name: Run Tests
         run: mvn test
-        working-directory: qa-automations-scripts-main/BlockDAG-Automation
+        working-directory: qa-automations-scripts-main/src/test/resources
 
       - name: Upload Test Reports
         uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: qa-automations-scripts-main/BlockDAG-Automation/test-output/emailable-report.html
+          path: qa-automations-scripts-main/test-output/emailable-report.html
