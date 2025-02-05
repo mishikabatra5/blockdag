@@ -25,14 +25,14 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean install
-        working-directory: qa-automations-scripts-main/BlockDAG-Automation/testng.xml
+        working-directory: qa-automations-scripts-main/BlockDAG-Automation
 
       - name: Run Tests
         run: mvn test
-        working-directory: qa-automations-scripts-main/BlockDAG-Automation/testng.xml
+        working-directory: qa-automations-scripts-main/BlockDAG-Automation
 
       - name: Upload Test Reports
         uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: qa-automations-scripts-main/test-output/emailable-report.html
+          path: qa-automations-scripts-main/BlockDAG-Automation/test-output/emailable-report.html
